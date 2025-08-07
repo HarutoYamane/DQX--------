@@ -12,8 +12,8 @@ interface MainToolsContextType {
   setValues: (values: (number | null)[]) => void;
   nowValues: number[]; //現在値
   setNowValues: (nowValues: number[]) => void;
-  SettingValues: number[]; //設定値
-  setSettingValues: (SettingValues: number[]) => void;
+  settingValues: number[]; //設定値
+  setSettingValues: (settingValues: number[]) => void;
 }
 
 export const MainToolsContext = createContext<MainToolsContextType | undefined>(
