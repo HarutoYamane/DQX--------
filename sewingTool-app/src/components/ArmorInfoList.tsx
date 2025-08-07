@@ -1,6 +1,6 @@
 interface ArmorInfo {
-  Typeid: string; //武器種類
-  name: string; //武器名
+  Typeid: string; //防具種類
+  name: string; //防具名
   SettingValues: (number | null)[]; // 最大値の配列(左上→中央上→右上→左中央→中央→右中央→左下→中央下→右下）
 }
 
@@ -12,12 +12,12 @@ const ArmorInfoList: ArmorInfo[] = [
   },
   {
     Typeid: "body_upper",
-    name: "鋼の体上防具",
+    name: "鉄の体上防具",
     SettingValues: [20, 25, 30, 35, 40, 45, 50, 55, 60],
   },
   {
     Typeid: "body_lower",
-    name: "銀の体下防具",
+    name: "鉄の体下防具",
     SettingValues: [30, 35, 40, 45, 50, 55, 60, 65, 70],
   },
   {
@@ -27,7 +27,7 @@ const ArmorInfoList: ArmorInfo[] = [
   },
   {
     Typeid: "leg",
-    name: "鋼の脚防具",
+    name: "プラチナの脚防具",
     SettingValues: [15, 20, 25, 30, 35, 40, 45, 50, 55],
   },
   {
