@@ -18,13 +18,20 @@ export const ArmorProvider: React.FC<{ children: React.ReactNode }> = ({
     null,
     null,
   ]);
-  const [nowValues, setNowValues] = useState<number[]>(
-    //現在値
-    [0, 0, 0, 0, 0, 0, 0, 0, 0]
-  );
-  const [settingValues, setSettingValues] = useState<number[]>([
-    //設定値
+  const [nowValues, setNowValues] = useState<number[]>([
     0, 0, 0, 0, 0, 0, 0, 0, 0,
+  ]);
+  const [settingValues, setSettingValues] = useState<(number | null)[]>([
+    //設定値
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
   ]);
 
   const value = {
