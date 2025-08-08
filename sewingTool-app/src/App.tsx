@@ -1,5 +1,5 @@
-import WeaponTypeSelector from "./components/ArmorTypeSelector";
-import WeaponNameSelector from "./components/ArmorNameSelector";
+import ArmorTypeSelector from "./components/ArmorTypeSelector";
+import ArmorNameSelector from "./components/ArmorNameSelector";
 import MainTool from "./components/MainTool";
 import { ArmorProvider } from "./contexts/TodoProvider";
 
@@ -8,9 +8,9 @@ function App() {
     <ArmorProvider>
       <div className="bg-orange-100 h-screen w-screen">
         <div className="flex h-full w-full bg-orange-100">
-          <div className="flex flex-col gap-4 p-4 m-4 border-2 border-gray-300 rounded-md">
-            <WeaponTypeSelector />
-            <WeaponNameSelector />
+          <div className="flex flex-col gap-8 p-4 m-4 border-2 border-gray-300 rounded-md">
+            <ArmorTypeSelector />
+            <ArmorNameSelector />
           </div>
           <div className="flex flex-col gap-4 p-4 m-4 border-2 border-gray-300 rounded-md">
             <MainTool />
